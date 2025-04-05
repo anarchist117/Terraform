@@ -1,5 +1,5 @@
 # 1. Copy terraform.exe in C:\Terraform
-[Windows](https://releases.hashicorp.com/terraform/1.11.3/terraform_1.11.3_windows_amd64.zip)
+[Windows](https://developer.hashicorp.com/terraform/install?product_intent=terraform#windows)
 
 # 2. System Properties => Advanced => Evironment Variables => User variables
 ```powershell
