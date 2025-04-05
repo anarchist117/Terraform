@@ -7,7 +7,9 @@
 ```
 
 # 3. Configure mirror
+```
 copy terraform.rc %APPDATA%\
+```
 
 # Documentation
 [What is Terraform?](https://developer.hashicorp.com/terraform)
