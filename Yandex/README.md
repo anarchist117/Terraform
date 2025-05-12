@@ -4,6 +4,9 @@ export YC_CLOUD_ID=$(yc config get cloud-id)
 export YC_FOLDER_ID=$(yc config get folder-id)
 ```
 ```
+terraform import yandex_kubernetes_node_group.k8s_worker abcdefg12345
+```
+```
 terraform state list
 ```
 ```
