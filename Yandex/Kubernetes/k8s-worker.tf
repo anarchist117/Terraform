@@ -74,7 +74,7 @@ resource "yandex_kubernetes_node_group" "k8s_worker" {
 
     # Maintenance window settings
     maintenance_policy {
-        auto_repair  = false
+        auto_repair  = true
         auto_upgrade = true
     }
 
