@@ -9,3 +9,10 @@ resource "yandex_vpc_subnet" "k8s_nodes" {
   v4_cidr_blocks = ["10.252.0.0/16"]
   network_id     = yandex_vpc_network.k8s.id
 }
+
+resource "yandex_vpc_subnet" "nat_instance" {
+  folder_id = yandex_resourcemanager_folder.k8s.id
+  name = "nat_instance"
+  v4_cidr_blocks = ["10.251.0.0/16"]
+  network_id     = yandex_vpc_network.k8s.id
+}
