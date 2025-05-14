@@ -41,13 +41,3 @@ resource "yandex_compute_instance" "nat-instance" {
         "ssh-keys"  = "ssh-ed25519 12345abcdef username"
     }
 }
-
-resource "yandex_vpc_route_table" "nat-instance-route" {
-  folder_id = yandex_resourcemanager_folder.k8s.id    
-  name       = "nat-instance-route"
-  network_id = yandex_vpc_network.k8s.id
-  static_route {
-    destination_prefix = "0.0.0.0/0"
-    next_hop_address   = yandex_compute_instance.nat-instance.network_interface.0.ip_address
-  }
-}
