@@ -32,7 +32,7 @@ resource "yandex_compute_instance" "nat-instance" {
     }
 
     network_interface {
-        subnet_id          = yandex_vpc_subnet.nat_instance.id
+        subnet_id          = yandex_vpc_subnet.k8s_public.id
         security_group_ids = []
         nat                = true
     }
