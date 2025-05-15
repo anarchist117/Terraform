@@ -41,7 +41,7 @@ resource "yandex_kubernetes_cluster" "zonal_cluster" {
           zone      = "ru-central1-a"
         
           # Subnet
-          subnet_id = yandex_vpc_subnet.k8s_nodes.id
+          subnet_id = yandex_vpc_subnet.k8s_public.id
         }
 
       # Security groups
