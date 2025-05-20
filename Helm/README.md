@@ -14,3 +14,5 @@ helm search repo longhorn --versions
 [cert-manager](https://github.com/cert-manager/cert-manager)
 
 [longhorn](https://github.com/longhorn/longhorn)
+
+[dashboard](https://github.com/kubernetes/dashboard)
