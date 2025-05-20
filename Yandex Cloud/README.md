@@ -1,4 +1,7 @@
 ```
+yc init
+```
+```
 yc managed-kubernetes cluster \
    get-credentials Cluster_ID \
    --external

@@ -48,7 +48,7 @@ resource "yandex_kubernetes_node_group" "k8s_worker" {
             ipv6               = false
             nat                = false      # Public address
             security_group_ids = []         # Security groups
-            subnet_ids         = [ yandex_vpc_subnet.k8s_nodes.id ]
+            subnet_ids         = [ yandex_vpc_subnet.k8s_local.id ]
         }
 
         # Container runtime
