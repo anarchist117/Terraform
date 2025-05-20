@@ -5,6 +5,7 @@ helm repo add longhorn https://charts.longhorn.io
 
 helm search repo ingress-nginx/ingress-nginx --versions
 helm search repo cert-manager --versions
+helm search repo longhorn --versions
 ```
 
 # Documentation
