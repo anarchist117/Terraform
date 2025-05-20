@@ -7,4 +7,6 @@ helm search repo cert-manager --versions
 ```
 
 # Documentation
+[ingress-nginx](https://github.com/kubernetes/ingress-nginx)
+
 [cert-manager](https://github.com/cert-manager/cert-manager)
