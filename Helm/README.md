@@ -7,6 +7,7 @@ helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 helm search repo ingress-nginx/ingress-nginx --versions
 helm search repo cert-manager --versions
 helm search repo longhorn --versions
+helm search repo kubernetes-dashboard/kubernetes-dashboard --versions
 ```
 
 # Documentation
