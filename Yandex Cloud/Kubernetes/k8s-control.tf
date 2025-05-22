@@ -16,12 +16,12 @@ resource "yandex_kubernetes_cluster" "k8s_control" {
   # Service account for nodes
    node_service_account_id = yandex_iam_service_account.k8s_node_sa.id
 
-  # Encryption key 
+  # Encryption key
     kms_provider {
        key_id = yandex_kms_symmetric_key.k8s.id
     }
 
-  # Release channel 
+  # Release channel
     release_channel          = "STABLE"
 
   # Labels
@@ -73,13 +73,13 @@ resource "yandex_kubernetes_cluster" "k8s_control" {
   # Enable network policy
     network_policy_provider  = "CALICO"
 
-  # CIDR cluster 
-    cluster_ipv4_range       = "10.254.0.0/16"
-    cluster_ipv6_range       = null
-
   # CIDR services
     service_ipv4_range       = "10.253.0.0/16"
     service_ipv6_range       = null
+
+  # CIDR cluster 
+    cluster_ipv4_range       = "10.254.0.0/16"
+    cluster_ipv6_range       = null
 
   # Node subnet mask
     node_ipv4_cidr_mask_size = 24
