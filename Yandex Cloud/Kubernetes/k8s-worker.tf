@@ -15,8 +15,8 @@ resource "yandex_kubernetes_node_group" "k8s_worker" {
 
     # Changes during creation and updates
     deploy_policy {
-        max_expansion   = 3     # Max group size expansion 
-        max_unavailable = 0     # Max group size reduction 
+        max_expansion   = 3     # Max group size expansion
+        max_unavailable = 0     # Max group size reduction
     }
 
 
@@ -80,5 +80,5 @@ resource "yandex_kubernetes_node_group" "k8s_worker" {
 
     # Additional
     node_labels            = {}
-    node_taints            = [] 
+    node_taints            = []
 }
