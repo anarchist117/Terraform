@@ -1,4 +1,4 @@
-resource "yandex_kubernetes_cluster" "zonal_cluster" {
+resource "yandex_kubernetes_cluster" "k8s_control" {
   depends_on = [
     yandex_resourcemanager_folder_iam_member.k8s_resource_sa,
     yandex_resourcemanager_folder_iam_member.k8s_node_sa
